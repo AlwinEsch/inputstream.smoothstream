@@ -1,1 +1,23 @@
+# build artifacts
+build/
+debian/changelog
+debian/files
+debian/kodi-inputstream-smoothstream-dbg.debhelper.log
+debian/kodi-inputstream-smoothstream-dbg.substvars
+debian/kodi-inputstream-smoothstream-dbg/
+debian/kodi-inputstream-smoothstream.debhelper.log
+debian/kodi-inputstream-smoothstream.postinst.debhelper
+debian/kodi-inputstream-smoothstream.postrm.debhelper
+debian/kodi-inputstream-smoothstream.substvars
+debian/kodi-inputstream-smoothstream/
+debian/tmp/
+obj-x86_64-linux-gnu/
 inputstream.smoothstream/addon.xml
+
+# clion
+.idea/
+
+# Eclipse/CDT
+.cproject
+.project
+.settings/
