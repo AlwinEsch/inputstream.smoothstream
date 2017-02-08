@@ -994,11 +994,10 @@ extern "C" {
   void GetCapabilities(INPUTSTREAM_CAPABILITIES* caps)
   {
     xbmc->Log(ADDON::LOG_DEBUG, "GetCapabilities()");
-    caps->m_supportsIDemux = true;
-    caps->m_supportsIPosTime = false;
-    caps->m_supportsIDisplayTime = true;
-    caps->m_supportsSeek = true;
-    caps->m_supportsPause = true;
+    caps->m_mask = INPUTSTREAM_CAPABILITIES::SUPPORTSIDEMUX |
+                   INPUTSTREAM_CAPABILITIES::SUPPORTSIDISPLAYTIME |
+                   INPUTSTREAM_CAPABILITIES::SUPPORTSSEEK |
+                   INPUTSTREAM_CAPABILITIES::SUPPORTSPAUSE;
   }
 
   struct INPUTSTREAM_INFO GetStream(int streamid)
